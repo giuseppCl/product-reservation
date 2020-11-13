@@ -2,7 +2,7 @@
 resilience4j.retry:
   configs:
     stageOneVariationOne:
-      maxRetryAttempts: 5
+      maxRetryAttempts: 10
       waitDuration: 10s
       retryExceptions:
         - com.webshop.productreservationservice.exceptions.ProductNotFoundException
