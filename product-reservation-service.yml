@@ -1,0 +1,54 @@
+########### Retry
+resilience4j.retry:
+  configs:
+    stageOneVariationOne:
+      maxRetryAttempts: 1
+      waitDuration: 10s
+      retryExceptions:
+        - com.webshop.productreservationservice.exceptions.ProductNotFoundException
+#
+#      ignoreExceptions:
+#        -
+#    stageOneVariationTwo:
+#      maxRetryAttempts: 3
+#      waitDuration: 10s
+#      retryExceptions:
+#        - org.springframework.web.client.HttpServerErrorException
+#        - java.io.IOException
+#      ignoreExceptions:
+#        -
+#    stageOneVariationThree:
+#      maxRetryAttempts: 3
+#      waitDuration: 10s
+#      retryExceptions:
+#        - org.springframework.web.client.HttpServerErrorException
+#        - java.io.IOException
+#      ignoreExceptions:
+#        -
+############ CircuitBreaker
+#resilience4j.circuitbreaker:
+#  configs:
+#    stateTwoVariationOne:
+#      registerHealthIndicator: true
+#      slidingWindowSize: 100
+#    stageTwoVariationTwo:
+#    stageTwoVariationThree:
+#
+############ RateLimiter
+#resilience4j.ratelimiter:
+#  configs:
+#    stateThreeVariationOne:
+#      limitForPeriod: 10
+#      limitRefreshPeriod: 1s
+#      timeoutDuration: 0
+#      registerHealthIndicator: true
+#      eventConsumerBufferSize: 100
+#    stateThreeVariationTwo:
+#    stateThreeVariationThree:
+#
+############ TimeLimiter
+#resilience4j.timelimiter:
+#  configs:
+#    default:
+#      timeoutDuration: 10s
+#      cancelRunningFuture: true
