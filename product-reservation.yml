@@ -1,7 +1,7 @@
 ########### Retry
 resilience4j.retry:
   configs:
-    stageOneVariationOne:
+    default:
       maxRetryAttempts: 10
       waitDuration: 10s
       retryExceptions:
