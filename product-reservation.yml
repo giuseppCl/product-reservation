@@ -2,7 +2,7 @@
 resilience4j.retry:
   configs:
     default:
-      maxRetryAttempts: 10
+      maxRetryAttempts: 8
       waitDuration: 10s
       retryExceptions:
         - com.webshop.productreservationservice.exceptions.ProductNotFoundException
