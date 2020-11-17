@@ -4,7 +4,7 @@ management.endpoint.health.show-details: always
 resilience4j.retry:
     configs:
       default:
-       maxAttempts: 3
+       maxAttempts: 6
 resilience4j.circuitbreaker:
     configs:
       default:
@@ -16,4 +16,7 @@ resilience4j.ratelimiter:
 resilience4j.timelimiter:
     configs:
       default:
+#100ms/maxAttempts
+#1000ms/maxAttempts
+#10000ms/maxAttempts
         timeOutDuration: 33ms
