@@ -5,8 +5,8 @@ management.endpoint.health.show-details: always
 resilience4j.retry:
   configs:
     default:
-      maxRetryAttempts: 10
-      waitDuration: 1s
+      maxRetryAttempts: 3
+      waitDuration: 2000ms
       retryExceptions:
         - com.webshop.productreservationservice.exceptions.ProductNotFoundException
 #
