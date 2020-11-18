@@ -4,15 +4,17 @@ management.endpoint.health.show-details: always
 resilience4j.retry:
     configs:
       default:
-       maxAttempts: 10
+       maxAttempts: 3
 resilience4j.circuitbreaker:
     configs:
       default:
-        #waitDurationInOpenState: 60000ms
+        permittedNumberOfCalls: 10
+        slowCallDurationThreshold: 100ms
 resilience4j.ratelimiter:
     configs:
       default:
-        #timeoutDuration: 5s
+        limitRefreshPeriod: 500ns
+        limitForPeriod: 50
 resilience4j.timelimiter:
     configs:
       default:
