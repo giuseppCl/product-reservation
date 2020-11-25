@@ -9,7 +9,7 @@ resilience4j.circuitbreaker:
     configs:
       default:
         permittedNumberOfCallsInHalfOpenState: 10
-        slowCallDurationThreshold: 10000ms
+        slowCallDurationThreshold: 1000ms
 resilience4j.ratelimiter:
     configs:
       default:
@@ -18,4 +18,4 @@ resilience4j.ratelimiter:
 resilience4j.timelimiter:
     configs:
       default:
-        timeOutDuration: 10000ms
+        timeOutDuration: 1000ms
