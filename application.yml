@@ -4,7 +4,7 @@ management.endpoint.health.show-details: always
 resilience4j.retry:
     configs:
       default:
-       maxAttempts: 3
+       maxAttempts: 4
 resilience4j.circuitbreaker:
     configs:
       default:
