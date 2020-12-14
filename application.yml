@@ -26,5 +26,5 @@ resilience4j.circuitbreaker:
 resilience4j.timelimiter:
     configs:
       default:
-	#timeoutDuration = timelimit/retryMaxAttempts
+      # timeoutDuration = timelimit/retryMaxAttempts
         timeoutDuration: 33.33ms
