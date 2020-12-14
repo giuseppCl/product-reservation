@@ -46,4 +46,4 @@ resilience4j.timelimiter:
       #200000000  (200ms)    -> 6666666
       #100000000  (100ms)    -> 3333333
       # timeoutDuration = timelimit/retryMaxAttempts
-        timeoutDuration: 10000000000ns
+        timeoutDuration: 10000ms
