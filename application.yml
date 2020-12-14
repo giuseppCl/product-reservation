@@ -27,4 +27,4 @@ resilience4j.timelimiter:
     configs:
       default:
       # timeoutDuration = timelimit/retryMaxAttempts
-        timeoutDuration: 33.33ms
+        timeoutDuration: 33330000ns
