@@ -13,7 +13,7 @@ resilience4j.retry:
       #134750000ns  -> 0.55sec  = 550milli
       #49000000ns   -> 0.2sec   = 200milli
       #24500000ns   -> 0.1sec   = 100milli
-       waitDuration: 2450000000ns
+       waitDuration: 2205000000ns
        enableExponentialBackoff: true
        exponentialBackoffMultiplier: 2
 resilience4j.circuitbreaker:
@@ -28,22 +28,22 @@ resilience4j.circuitbreaker:
       #134750000ns  -> 0.55sec  = 550milli
       #49000000ns   -> 0.2sec   = 200milli
       #24500000ns   -> 0.1sec   = 100milli
-       waitDurationInOpenState: 2450000000ns
+       waitDurationInOpenState: 2205000000ns
        enableExponentialBackoff: true
        exponentialBackoffMultiplier: 2
        # slowCallDurationThreshold = timelimit
-       slowCallDurationThreshold: 10000ms
+       slowCallDurationThreshold: 9000ms
 resilience4j.timelimiter:
     configs:
       default:
-      #10000000000(10000ms)  -> 3333333333
-      #9000000000 (9000ms)   -> 3000000000
-      #5500000000 (5500ms)   -> 1833333333
-      #2000000000 (2000ms)   -> 666666666
-      #1000000000 (1000ms)   -> 333333333
-      #900000000  (900ms)    -> 30000000
-      #550000000  (550ms)    -> 18333333
-      #200000000  (200ms)    -> 6666666
-      #100000000  (100ms)    -> 3333333
-      # timeoutDuration = timelimit/retryMaxAttempts
-        timeoutDuration: 10000000000ns
+      #10000000000(10000ms)  
+      #9000000000 (9000ms)   
+      #5500000000 (5500ms)   
+      #2000000000 (2000ms)   
+      #1000000000 (1000ms)   
+      #900000000  (900ms)    
+      #550000000  (550ms)    
+      #200000000  (200ms)    
+      #100000000  (100ms)    
+      # timeoutDuration = timelimit
+        timeoutDuration: 9000000000ns
